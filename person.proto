@@ -1,0 +1,16 @@
+syntax="proto3";
+
+package main;
+
+message Address {
+	string Add = 1;
+	string HNo = 2;
+}
+
+message Person {
+	string Name = 1;
+	int32    Age  = 2;
+        Address Addr = 3;
+	repeated string NickName = 4;
+	map<string,string> Records = 5;
+}
